@@ -11,6 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div>
+          <h2>FrozenSpade.TV</h2>
+        </div>
         <Twitch />
         <Twitter />
         <Speedrun />

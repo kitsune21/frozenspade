@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import TwitchPlayer from './TwitchPlayer';
+import TwitchClips from './TwitchClips';
 
 class Twitch extends Component {
   render() {
     return(
       <div>
-        <p>Twitch</p>
+        <TwitchPlayer />
+        <TwitchClips />
       </div>
     )
   }
