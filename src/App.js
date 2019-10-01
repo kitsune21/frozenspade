@@ -5,6 +5,7 @@ import Speedrun from './Components/SpeedRun/SpeedRun';
 import SoundCloud from './Components/SoundCloud/SoundCloud';
 import Discord from './Components/Discord/Discord';
 import ItchIO from './Components/ItchIO/ItchIO';
+import YouTube from './Components/YouTube/YouTube';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
         <SoundCloud />
         <Discord />
         <ItchIO />
+        <YouTube />
       </div>
     );
   }
