@@ -47,7 +47,7 @@ class PBEntry extends Component {
   render() {
     return(
       <div>
-        <a href={this.props.video_link}><img alt='Hi' src={this.state.gameImg}/></a>
+        <a href={this.props.video_link} target={'_blank'}><img alt='Hi' src={this.state.gameImg}/></a>
         <p>{this.state.gameName}</p>
         <p>{this.state.categoryName}</p>
         <p>Place: {this.props.place} Time: {this.props.time}</p>

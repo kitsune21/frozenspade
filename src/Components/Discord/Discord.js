@@ -5,6 +5,7 @@ class Discord extends Component {
     return(
       <div>
         <p>Discord</p>
+        <a href='https://discord.gg/ZhdEZh9' targer={'_blank'}><p>Come join our Discord server!</p></a>
       </div>
     )
   }

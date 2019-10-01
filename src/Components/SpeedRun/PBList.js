@@ -13,7 +13,7 @@ class PBList extends Component {
       url: this.props.pbURL
     })
       .then( res => {
-        console.log(res.data.data)
+        res.data.data.sort((a, b) => (a.run.game > b.run.game) ? 1 : -1)
         this.setState({ pbs: res.data.data})
       })
       .catch( err => {
