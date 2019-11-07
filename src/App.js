@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
+import { Switch, Route, } from 'react-router-dom';
+import NavBar from './Components/Shared/NavBar'
 import Twitch from './Components/Twitch/Twitch';
 import Twitter from './Components/Twitter/Twitter';
 import Speedrun from './Components/SpeedRun/SpeedRun';
-import SoundCloud from './Components/SoundCloud/SoundCloud';
 import Discord from './Components/Discord/Discord';
-import ItchIO from './Components/ItchIO/ItchIO';
-import YouTube from './Components/YouTube/YouTube';
 import './App.css';
 
 class App extends Component {
@@ -13,15 +12,14 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <h2>FrozenSpade.TV</h2>
+          <NavBar />
         </div>
-        <Twitch />
-        <Twitter />
-        <Speedrun />
-        <SoundCloud />
-        <Discord />
-        <ItchIO />
-        <YouTube />
+        <Switch>
+          <Route exact path='/' component={Twitch} />
+          <Route exact path='/speedrun' component={Speedrun} />
+          <Route exact path='/twitter' component={Twitter} />
+          <Route exact path='/discord' component={Discord} />
+        </Switch>
       </div>
     );
   }

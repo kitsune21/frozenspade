@@ -5,6 +5,7 @@ const TwitchPlayer = ({channel}) => (
   <ReactTwitchEmbedVideo 
     channel={channel}
     width="100%"
+    height={window.innerHeight - 55}
   />
 )
 

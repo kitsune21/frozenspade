@@ -23,7 +23,7 @@ componentDidMount() {
   render() {
     return(
       <div>
-        <p>SpeedRun</p>
+        <br />
         <PBList pbURL={"https://www.speedrun.com/api/v1/users/18vkrd5j/personal-bests"}/>
       </div>
     )

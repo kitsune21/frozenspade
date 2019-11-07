@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TwitchPlayer from './TwitchPlayer';
-import TwitchClips from './TwitchClips';
+// import TwitchClips from './TwitchClips';
 import axios from 'axios';
 
 class Twitch extends Component {
@@ -26,7 +26,7 @@ class Twitch extends Component {
     return(
       <div>
         <TwitchPlayer channel={this.state.channel}/>
-        <TwitchClips />
+        {/* <TwitchClips /> */}
       </div>
     )
   }

@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import TwitchClip from './TwitchClip';
-import { Container, Header, Segment, Button } from 'semantic-ui-react';
+import styled from 'styled-components';
+
+const Div = styled.div `
+  
+`
 
 class TwitchClips extends Component {
 
@@ -36,19 +40,17 @@ class TwitchClips extends Component {
   render() {
     const { clips, clipNumber } = this.state;
     return(
-      <Container>
-        <Segment.Group>
-          <Segment>
-            <Header>Twitch Clips</Header>
-          </Segment>
-          <Segment.Inline>
-            <Button onClick={() => this.previousClip()}>-</Button>
+      <Div style={{height: window.innerHeight}}>
+        <div>
+          <div>
+            <h2>Twitch Clips</h2>
+          </div>
+          <div>
             <p>{this.state.clipNumber + 1}/{this.state.clips.length}</p>
             {clips.length > 0 ? <TwitchClip clip={clips[clipNumber]} /> : null}
-            <Button onClick={() => this.nextClip()}>+</Button>
-          </Segment.Inline>
-        </Segment.Group>
-      </Container>
+          </div>
+        </div>
+      </Div>
     )
   }
 }
