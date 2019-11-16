@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import axios from 'axios';
+
+const TD = styled.td `
+  border-bottom: 2px solid #2f9fd6;
+  color: white;
+`
 
 class PBEntry extends Component {
 
@@ -64,11 +70,11 @@ class PBEntry extends Component {
   render() {
     return(
       <tr>
-        <td><a href={this.props.video_link} target={'_blank'}><img alt='Hi' src={this.state.gameImg}/></a></td>
-        <td>{this.state.gameName}</td>
-        <td>{this.state.categoryName}</td>
-        <td>{this.placeRender(this.props.place)}</td>
-        <td>{this.secondsToHms(this.props.time)}</td>
+        <TD><a href={this.props.video_link} target={'_blank'}><img alt='Hi' src={this.state.gameImg}/></a></TD>
+        <TD>{this.state.gameName}</TD>
+        <TD>{this.state.categoryName}</TD>
+        <TD>{this.placeRender(this.props.place)}</TD>
+        <TD>{this.secondsToHms(this.props.time)}</TD>
       </tr>
     )
   }

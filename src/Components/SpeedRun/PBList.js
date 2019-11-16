@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import axios from 'axios'; 
 
 import PBEntry from './PBEntry';
+
+const TH = styled.th `
+  border-bottom: 2px solid #2f9fd6;
+  color: #2f9fd6;
+`
 
 class PBList extends Component {
    
@@ -26,15 +32,14 @@ class PBList extends Component {
     return(
       <div>
         <br />
-        <p>Personal Bests:</p>
         <table style={{marginLeft: window.innerWidth / 4, height: window.innerHeight, overflowY: 'scroll'}}>
           <thead>
             <tr>
-              <th>Game</th>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Current Place</th>
-              <th>Time</th>
+              <TH>Game</TH>
+              <TH>Title</TH>
+              <TH>Category</TH>
+              <TH>Current Place</TH>
+              <TH>Time</TH>
             </tr>
           </thead>
           <tbody>
