@@ -20,11 +20,12 @@ const Li = styled.li `
     color: white;
   }
 `
-const Title = styled.h2 `
+const Title = styled.h1 `
   float: left;
   margin-left: 10px;
   margin-right: 30px;
-  color: #2f9fd6;
+  color: white;
+  text-shadow: 1px 1px #2f9fd6;
 `
 
 class NavBar extends Component {

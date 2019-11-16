@@ -4,6 +4,14 @@ import axios from 'axios';
 
 import PBEntry from './PBEntry';
 
+const TBody = styled.tbody` 
+  overflow:auto;
+  height:90%;
+`
+const THead = styled.thead`
+  
+`
+
 const TH = styled.th `
   border-bottom: 2px solid #2f9fd6;
   color: #2f9fd6;
@@ -32,8 +40,8 @@ class PBList extends Component {
     return(
       <div>
         <br />
-        <table style={{marginLeft: window.innerWidth / 4, height: window.innerHeight, overflowY: 'scroll'}}>
-          <thead>
+        <table style={{marginLeft: window.innerWidth / 4, height: window.innerHeight}}>
+          <THead>
             <tr>
               <TH>Game</TH>
               <TH>Title</TH>
@@ -41,8 +49,8 @@ class PBList extends Component {
               <TH>Current Place</TH>
               <TH>Time</TH>
             </tr>
-          </thead>
-          <tbody>
+          </THead>
+          <TBody>
           {
             this.state.pbs.map( pb => <PBEntry 
               key={pb.run.id} 
@@ -53,7 +61,7 @@ class PBList extends Component {
               place={pb.place} 
               />)
           }
-          </tbody>
+          </TBody>
         </table>
       </div>
     )
