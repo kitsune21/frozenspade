@@ -9,7 +9,7 @@ import './App.css';
 import styled from 'styled-components';
 
 const DIV = styled.div `
-  background-image: linear-gradient(to right, #232529 ,#46696b);
+  background-image: linear-gradient(to right, #00008e ,#00d4ff);
   text-color: blue;
 `
 

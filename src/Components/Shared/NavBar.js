@@ -14,10 +14,10 @@ const Li = styled.li `
   border-right: 1px solid;
   border-bottom: 1px solid;
   border-radius: 8px;
-  border-color: #2f9fd6;
+  border-color: #D4FF00;
 
   &:hover {
-    color: white;
+    color: #D4FF00;
   }
 `
 const Title = styled.h1 `
@@ -25,7 +25,7 @@ const Title = styled.h1 `
   margin-left: 10px;
   margin-right: 30px;
   color: white;
-  text-shadow: 1px 1px #2f9fd6;
+  text-shadow: 1px 1px #D4FF00;
 `
 
 class NavBar extends Component {
@@ -36,7 +36,7 @@ class NavBar extends Component {
         <Ul>
           <Li><Link to='/'>Twitch</Link></Li>
           <Li><Link to='/twitter'>Twitter</Link></Li>
-          <Li><Link to='/speedrun'>SpeedRun.Com</Link></Li>
+          <Li><Link to='/speedrun'>Speed Run WRs & PBs</Link></Li>
           <Li><Link to='/discord'>Discord</Link></Li>
         </Ul>
       </div>

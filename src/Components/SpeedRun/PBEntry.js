@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import axios from 'axios';
 
 const TD = styled.td `
-  border-bottom: 2px solid #2f9fd6;
-  color: white;
+  border-bottom: 2px solid #D4FF00;
+  color: #D4FF00;
 `
 
 class PBEntry extends Component {
